@@ -1,0 +1,178 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-protein: var(--protein);
+  --color-carbs: var(--carbs);
+  --color-fat: var(--fat);
+  --font-display: var(--font-anton), sans-serif;
+  --font-sans: var(--font-space-grotesk), sans-serif;
+}
+
+:root {
+  --radius: 0.25rem;
+  --background: oklch(0.13 0.005 60);
+  --foreground: oklch(0.97 0.01 80);
+  --card: oklch(0.17 0.006 60);
+  --card-foreground: oklch(0.97 0.01 80);
+  --popover: oklch(0.17 0.006 60);
+  --popover-foreground: oklch(0.97 0.01 80);
+  --primary: oklch(0.72 0.19 50);
+  --primary-foreground: oklch(0.13 0.005 60);
+  --secondary: oklch(0.22 0.006 60);
+  --secondary-foreground: oklch(0.97 0.01 80);
+  --muted: oklch(0.22 0.006 60);
+  --muted-foreground: oklch(0.7 0.01 70);
+  --accent: oklch(0.72 0.19 50);
+  --accent-foreground: oklch(0.13 0.005 60);
+  --destructive: oklch(0.6 0.22 27);
+  --destructive-foreground: oklch(0.97 0 0);
+  --border: oklch(1 0 0 / 14%);
+  --input: oklch(1 0 0 / 14%);
+  --ring: oklch(0.72 0.19 50);
+  --protein: oklch(0.68 0.15 245);
+  --carbs: oklch(0.82 0.16 85);
+  --fat: oklch(0.65 0.18 310);
+  --scrim: linear-gradient(90deg, oklch(0.1 0.005 60 / 0.92) 0%, oklch(0.1 0.005 60 / 0.55) 45%, transparent 75%),
+  linear-gradient(0deg, oklch(0.1 0.005 60 / 0.9) 0%, transparent 35%);
+}
+
+/* Light theme used by the app pages (wrap a page in class "app-light bg-app") */
+.app-light {
+  color-scheme: light;
+  --background: oklch(0.985 0.004 80);
+  --foreground: oklch(0.2 0.01 60);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.2 0.01 60);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.2 0.01 60);
+  --primary: oklch(0.62 0.19 50);
+  --primary-foreground: oklch(0.15 0.01 60);
+  --secondary: oklch(0.96 0.006 80);
+  --secondary-foreground: oklch(0.2 0.01 60);
+  --muted: oklch(0.96 0.006 80);
+  --muted-foreground: oklch(0.5 0.01 60);
+  --accent: oklch(0.62 0.19 50);
+  --accent-foreground: oklch(0.15 0.01 60);
+  --border: oklch(0 0 0 / 10%);
+  --input: oklch(0 0 0 / 10%);
+  --ring: oklch(0.62 0.19 50);
+  --protein: oklch(0.55 0.17 245);
+  --carbs: oklch(0.72 0.16 80);
+  --fat: oklch(0.55 0.2 310);
+  /* Darker shades for text on light backgrounds (WCAG AA, 4.5:1 or better) */
+  --primary-text: oklch(0.52 0.19 50);
+  --destructive: oklch(0.52 0.22 27);
+}
+
+/* Unlayered on purpose: it must win over the Tailwind utility of the same name. */
+.app-light .text-primary,
+.app-light .hover\:text-primary:hover {
+  color: var(--primary-text);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { color-scheme: dark; }
+  body { background-color: var(--color-background); color: var(--color-foreground); font-family: var(--font-sans); }
+  button { cursor: pointer; }
+  button:disabled { cursor: not-allowed; }
+}
+
+@utility font-display { font-family: var(--font-display); letter-spacing: -0.01em; }
+@utility text-outline { color: transparent; -webkit-text-stroke: 1.5px var(--foreground); }
+@utility bg-app {
+  background:
+          radial-gradient(1100px 560px at 100% -10%, oklch(0.95 0.06 55 / 0.6), transparent 60%),
+          radial-gradient(900px 520px at -10% 110%, oklch(0.95 0.04 245 / 0.5), transparent 60%),
+          var(--background);
+}
+@utility bg-scrim { background: var(--scrim); }
+
+@keyframes kenburns { from { transform: scale(1.12); } to { transform: scale(1); } }
+@keyframes rise { from { transform: translateY(110%); } to { transform: translateY(0); } }
+@keyframes fill { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes fadeup { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+@utility animate-kenburns { animation: kenburns 7s ease-out forwards; }
+@utility animate-rise { animation: rise 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+@utility animate-fill { animation: fill linear forwards; transform-origin: left; }
+@utility animate-fadeup { animation: fadeup 0.8s ease-out both; }
+
+/* ===== Motion ===== */
+/* One set of timings for the whole app (lib/motion.ts uses the same numbers). */
+:root { --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1); --dur-fast: 0.2s; --dur-base: 0.3s; --dur-slow: 0.5s; --dur-draw: 0.8s; }
+@keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+/* Opacity only, on purpose: animate-page wraps every page, and a transform on that wrapper
+   would become the containing block for every "position: fixed" child (guided screen, modals). */
+@keyframes pagein { from { opacity: 0; } to { opacity: 1; } }
+@keyframes sheet { from { opacity: 0; transform: translateY(32px); } to { opacity: 1; transform: none; } }
+@keyframes pop { from { opacity: 0; transform: scale(0.96) translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes ring { from { stroke-dashoffset: 440; } } /* full circle = 2π × 70 ≈ 440 */
+@keyframes grow-y { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@keyframes grow-x { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+@utility animate-fadein { animation: fadein var(--dur-fast) var(--ease-out) both; }
+@utility animate-page { animation: pagein var(--dur-base) var(--ease-out) both; }
+@utility animate-sheet { animation: sheet var(--dur-base) var(--ease-out) both; }
+@utility animate-pop { animation: pop var(--dur-base) var(--ease-out) both; }
+@utility animate-ring { animation: ring var(--dur-draw) var(--ease-out) both; }
+@utility animate-grow-y { animation: grow-y var(--dur-draw) var(--ease-out) both; transform-origin: bottom; }
+@utility animate-grow-x { animation: grow-x var(--dur-draw) var(--ease-out) both; transform-origin: left; }
+
+/* Auth and splash */
+@keyframes shake { 0%, 100% { transform: translateX(0); } 20% { transform: translateX(-6px); } 40% { transform: translateX(5px); } 60% { transform: translateX(-3px); } 80% { transform: translateX(2px); } }
+@keyframes loadbar { from { transform: translateX(-100%); } to { transform: translateX(250%); } }
+@keyframes dotpulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.5); } }
+@keyframes cardin { from { opacity: 0; transform: translateY(28px) scale(0.96); } to { opacity: 1; transform: none; } }
+@keyframes float { 0%, 100% { transform: translate3d(0, 0, 0); } 50% { transform: translate3d(30px, -40px, 0); } }
+@utility animate-card { animation: cardin 0.6s cubic-bezier(0.16, 1, 0.3, 1) both; }
+@utility animate-float { animation: float 14s ease-in-out infinite; }
+@utility animate-shake { animation: shake 0.4s var(--ease-out) both; }
+@utility animate-loadbar { animation: loadbar 1.2s ease-in-out infinite; }
+@utility animate-dotpulse { display: inline-block; animation: dotpulse 1.2s ease-in-out infinite; }
+
+/* Put class "stagger" on a parent: its children fade up one after another. */
+.stagger > * { animation: fadeup var(--dur-slow) var(--ease-out) both; }
+.stagger > *:nth-child(2) { animation-delay: 70ms; }
+.stagger > *:nth-child(3) { animation-delay: 140ms; }
+.stagger > *:nth-child(4) { animation-delay: 210ms; }
+.stagger > *:nth-child(5) { animation-delay: 280ms; }
+.stagger > *:nth-child(n + 6) { animation-delay: 350ms; }
+
+/* Respect people who turn animations off in their device settings. */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important; /* without this, an infinite animation would flicker */
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  /* A spinner that stops looks frozen, so it keeps turning, slowly. */
+  .animate-spin { animation-duration: 1.6s !important; animation-iteration-count: infinite !important; }
+  /* The splash bar becomes a still bar instead of sliding out of view. */
+  .animate-loadbar { animation: none !important; width: 100%; opacity: 0.5; }
+}

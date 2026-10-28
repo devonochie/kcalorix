@@ -1,0 +1,435 @@
+[
+  {
+    "slug": "full-body-beginner",
+    "name": "Full Body Beginner",
+    "category": "FULL_BODY",
+    "level": "BEGINNER",
+    "description": "A gentle full-body circuit to build the habit and learn the basic moves.",
+    "restSeconds": 20,
+    "exercises": [
+      { "exercise": "jumping-jacks", "sets": 1, "durationSeconds": 30 },
+      { "exercise": "bodyweight-squat", "sets": 1, "reps": 12 },
+      { "exercise": "knee-push-up", "sets": 1, "reps": 8 },
+      { "exercise": "glute-bridge", "sets": 1, "reps": 12 },
+      { "exercise": "high-knees", "sets": 1, "durationSeconds": 30 },
+      { "exercise": "plank", "sets": 1, "durationSeconds": 20 },
+      { "exercise": "cobra-stretch", "sets": 1, "durationSeconds": 30 }
+    ]
+  },
+  {
+    "slug": "full-body-intermediate",
+    "name": "Full Body Intermediate",
+    "category": "FULL_BODY",
+    "level": "INTERMEDIATE",
+    "description": "A balanced strength and cardio circuit that works every major muscle group.",
+    "restSeconds": 20,
+    "exercises": [
+      { "exercise": "jumping-jacks", "sets": 1, "durationSeconds": 40 },
+      { "exercise": "bodyweight-squat", "sets": 2, "reps": 15 },
+      { "exercise": "push-up", "sets": 2, "reps": 10 },
+      { "exercise": "reverse-lunge", "sets": 2, "reps": 10 },
+      { "exercise": "mountain-climber", "sets": 2, "durationSeconds": 30 },
+      { "exercise": "burpee", "sets": 1, "reps": 8 },
+      { "exercise": "plank", "sets": 1, "durationSeconds": 40 },
+      { "exercise": "cobra-stretch", "sets": 1, "durationSeconds": 30 }
+    ]
+  },
+  {
+    "slug": "full-body-advanced",
+    "name": "Full Body Advanced",
+    "category": "FULL_BODY",
+    "level": "ADVANCED",
+    "description": "A demanding full-body session that mixes heavy bodyweight strength with conditioning.",
+    "restSeconds": 30,
+    "exercises": [
+      { "exercise": "burpee", "sets": 3, "reps": 12 },
+      { "exercise": "jump-squat", "sets": 3, "reps": 15 },
+      { "exercise": "push-up", "sets": 3, "reps": 15 },
+      { "exercise": "pull-up", "sets": 3, "reps": 5 },
+      { "exercise": "mountain-climber", "sets": 3, "durationSeconds": 45 },
+      { "exercise": "diamond-push-up", "sets": 2, "reps": 10 },
+      { "exercise": "plank", "sets": 2, "durationSeconds": 60 },
+      { "exercise": "seated-hamstring-stretch", "sets": 1, "durationSeconds": 30 }
+    ]
+  },
+  {
+    "slug": "chest-beginner",
+    "name": "Chest Beginner",
+    "category": "CHEST",
+    "level": "BEGINNER",
+    "description": "Gentle push-up progressions to wake up your chest and build a strong base. No equipment.",
+    "restSeconds": 20,
+    "exercises": [
+      { "exercise": "knee-push-up", "sets": 2, "reps": 8 },
+      { "exercise": "push-up", "sets": 2, "reps": 5 },
+      { "exercise": "bench-dip", "sets": 2, "reps": 8 },
+      { "exercise": "plank", "sets": 2, "durationSeconds": 20 },
+      { "exercise": "cobra-stretch", "sets": 1, "durationSeconds": 30 }
+    ]
+  },
+  {
+    "slug": "chest-intermediate",
+    "name": "Chest Intermediate",
+    "category": "CHEST",
+    "level": "INTERMEDIATE",
+    "description": "Full push-ups, diamond push-ups and dips for a chest that finally starts to show.",
+    "restSeconds": 30,
+    "exercises": [
+      { "exercise": "push-up", "sets": 3, "reps": 12 },
+      { "exercise": "diamond-push-up", "sets": 2, "reps": 8 },
+      { "exercise": "bench-dip", "sets": 3, "reps": 10 },
+      { "exercise": "knee-push-up", "sets": 2, "reps": 12 },
+      { "exercise": "plank", "sets": 2, "durationSeconds": 40 },
+      { "exercise": "cobra-stretch", "sets": 1, "durationSeconds": 30 }
+    ]
+  },
+  {
+    "slug": "chest-advanced",
+    "name": "Chest Advanced",
+    "category": "CHEST",
+    "level": "ADVANCED",
+    "description": "High-volume pressing that will leave your chest pumped and burning. No equipment.",
+    "restSeconds": 45,
+    "exercises": [
+      { "exercise": "push-up", "sets": 4, "reps": 20 },
+      { "exercise": "diamond-push-up", "sets": 3, "reps": 12 },
+      { "exercise": "bench-dip", "sets": 3, "reps": 15 },
+      { "exercise": "knee-push-up", "sets": 2, "reps": 20 },
+      { "exercise": "plank", "sets": 3, "durationSeconds": 60 },
+      { "exercise": "cobra-stretch", "sets": 1, "durationSeconds": 40 }
+    ]
+  },
+  {
+    "slug": "back-beginner",
+    "name": "Back Beginner",
+    "category": "BACK",
+    "level": "BEGINNER",
+    "description": "Easy pulling and posture work for a stronger back. You need a sturdy table or low bar for the rows.",
+    "restSeconds": 20,
+    "exercises": [
+      { "exercise": "inverted-row", "sets": 2, "reps": 8 },
+      { "exercise": "superman", "sets": 2, "reps": 10 },
+      { "exercise": "plank", "sets": 2, "durationSeconds": 20 },
+      { "exercise": "side-plank", "sets": 1, "durationSeconds": 15 },
+      { "exercise": "cobra-stretch", "sets": 1, "durationSeconds": 30 }
+    ]
+  },
+  {
+    "slug": "back-intermediate",
+    "name": "Back Intermediate",
+    "category": "BACK",
+    "level": "INTERMEDIATE",
+    "description": "Rows, pull-ups and back extensions to build width and strength. You need a pull-up bar.",
+    "restSeconds": 30,
+    "exercises": [
+      { "exercise": "inverted-row", "sets": 3, "reps": 10 },
+      { "exercise": "superman", "sets": 3, "reps": 12 },
+      { "exercise": "pull-up", "sets": 2, "reps": 4 },
+      { "exercise": "plank", "sets": 2, "durationSeconds": 40 },
+      { "exercise": "cobra-stretch", "sets": 1, "durationSeconds": 30 }
+    ]
+  },
+  {
+    "slug": "back-advanced",
+    "name": "Back Advanced",
+    "category": "BACK",
+    "level": "ADVANCED",
+    "description": "Heavy pulling volume for a wide, strong back. You need a pull-up bar.",
+    "restSeconds": 45,
+    "exercises": [
+      { "exercise": "pull-up", "sets": 4, "reps": 6 },
+      { "exercise": "inverted-row", "sets": 3, "reps": 15 },
+      { "exercise": "superman", "sets": 3, "reps": 15 },
+      { "exercise": "plank", "sets": 3, "durationSeconds": 60 },
+      { "exercise": "side-plank", "sets": 2, "durationSeconds": 40 },
+      { "exercise": "cobra-stretch", "sets": 1, "durationSeconds": 40 }
+    ]
+  },
+  {
+    "slug": "shoulders-beginner",
+    "name": "Shoulders Beginner",
+    "category": "SHOULDERS",
+    "level": "BEGINNER",
+    "description": "Light pressing and stability work to build strong, healthy shoulders. No equipment.",
+    "restSeconds": 20,
+    "exercises": [
+      { "exercise": "knee-push-up", "sets": 2, "reps": 8 },
+      { "exercise": "pike-push-up", "sets": 2, "reps": 5 },
+      { "exercise": "plank", "sets": 2, "durationSeconds": 25 },
+      { "exercise": "side-plank", "sets": 2, "durationSeconds": 15 },
+      { "exercise": "superman", "sets": 2, "reps": 10 },
+      { "exercise": "cobra-stretch", "sets": 1, "durationSeconds": 30 }
+    ]
+  },
+  {
+    "slug": "shoulders-intermediate",
+    "name": "Shoulders Intermediate",
+    "category": "SHOULDERS",
+    "level": "INTERMEDIATE",
+    "description": "Pike push-ups and stability drills to build rounder, stronger shoulders. No equipment.",
+    "restSeconds": 30,
+    "exercises": [
+      { "exercise": "pike-push-up", "sets": 3, "reps": 8 },
+      { "exercise": "push-up", "sets": 3, "reps": 10 },
+      { "exercise": "plank", "sets": 3, "durationSeconds": 30 },
+      { "exercise": "mountain-climber", "sets": 2, "durationSeconds": 30 },
+      { "exercise": "superman", "sets": 2, "reps": 12 },
+      { "exercise": "cobra-stretch", "sets": 1, "durationSeconds": 30 }
+    ]
+  },
+  {
+    "slug": "shoulders-advanced",
+    "name": "Shoulders Advanced",
+    "category": "SHOULDERS",
+    "level": "ADVANCED",
+    "description": "Hard overhead pressing volume for big, strong shoulders. No equipment.",
+    "restSeconds": 40,
+    "exercises": [
+      { "exercise": "pike-push-up", "sets": 4, "reps": 12 },
+      { "exercise": "push-up", "sets": 3, "reps": 15 },
+      { "exercise": "diamond-push-up", "sets": 3, "reps": 10 },
+      { "exercise": "mountain-climber", "sets": 3, "durationSeconds": 40 },
+      { "exercise": "plank", "sets": 3, "durationSeconds": 60 },
+      { "exercise": "cobra-stretch", "sets": 1, "durationSeconds": 40 }
+    ]
+  },
+  {
+    "slug": "arms-beginner",
+    "name": "Arms Beginner",
+    "category": "ARMS",
+    "level": "BEGINNER",
+    "description": "Triceps and pulling basics with just your body weight. You need a sturdy table or low bar for the rows.",
+    "restSeconds": 20,
+    "exercises": [
+      { "exercise": "knee-push-up", "sets": 2, "reps": 10 },
+      { "exercise": "bench-dip", "sets": 2, "reps": 8 },
+      { "exercise": "inverted-row", "sets": 2, "reps": 6 },
+      { "exercise": "plank", "sets": 2, "durationSeconds": 20 },
+      { "exercise": "cobra-stretch", "sets": 1, "durationSeconds": 30 }
+    ]
+  },
+  {
+    "slug": "arms-intermediate",
+    "name": "Arms Intermediate",
+    "category": "ARMS",
+    "level": "INTERMEDIATE",
+    "description": "Biceps and triceps supersets with dumbbells for bigger, stronger arms.",
+    "restSeconds": 30,
+    "exercises": [
+      { "exercise": "dumbbell-bicep-curl", "sets": 3, "reps": 10 },
+      { "exercise": "hammer-curl", "sets": 3, "reps": 10 },
+      { "exercise": "dumbbell-overhead-triceps-extension", "sets": 3, "reps": 10 },
+      { "exercise": "bench-dip", "sets": 3, "reps": 12 },
+      { "exercise": "diamond-push-up", "sets": 2, "reps": 8 }
+    ]
+  },
+  {
+    "slug": "arms-advanced",
+    "name": "Arms Advanced",
+    "category": "ARMS",
+    "level": "ADVANCED",
+    "description": "High-volume arm day with dumbbells. Curls, extensions and dips until your arms are done.",
+    "restSeconds": 45,
+    "exercises": [
+      { "exercise": "dumbbell-bicep-curl", "sets": 4, "reps": 12 },
+      { "exercise": "hammer-curl", "sets": 4, "reps": 12 },
+      { "exercise": "dumbbell-overhead-triceps-extension", "sets": 4, "reps": 12 },
+      { "exercise": "diamond-push-up", "sets": 3, "reps": 12 },
+      { "exercise": "bench-dip", "sets": 3, "reps": 15 }
+    ]
+  },
+  {
+    "slug": "legs-beginner",
+    "name": "Legs Beginner",
+    "category": "LEGS",
+    "level": "BEGINNER",
+    "description": "Simple squats and lunges to build a strong base. No equipment.",
+    "restSeconds": 20,
+    "exercises": [
+      { "exercise": "bodyweight-squat", "sets": 2, "reps": 12 },
+      { "exercise": "reverse-lunge", "sets": 2, "reps": 8 },
+      { "exercise": "wall-sit", "sets": 1, "durationSeconds": 20 },
+      { "exercise": "calf-raise", "sets": 2, "reps": 15 },
+      { "exercise": "seated-hamstring-stretch", "sets": 1, "durationSeconds": 30 }
+    ]
+  },
+  {
+    "slug": "legs-intermediate",
+    "name": "Legs Intermediate",
+    "category": "LEGS",
+    "level": "INTERMEDIATE",
+    "description": "More volume plus some power work for stronger, more defined legs. No equipment.",
+    "restSeconds": 30,
+    "exercises": [
+      { "exercise": "bodyweight-squat", "sets": 3, "reps": 15 },
+      { "exercise": "reverse-lunge", "sets": 3, "reps": 12 },
+      { "exercise": "jump-squat", "sets": 2, "reps": 10 },
+      { "exercise": "single-leg-romanian-deadlift", "sets": 2, "reps": 8 },
+      { "exercise": "calf-raise", "sets": 3, "reps": 20 },
+      { "exercise": "wall-sit", "sets": 2, "durationSeconds": 40 },
+      { "exercise": "seated-hamstring-stretch", "sets": 1, "durationSeconds": 30 }
+    ]
+  },
+  {
+    "slug": "legs-advanced",
+    "name": "Legs Advanced",
+    "category": "LEGS",
+    "level": "ADVANCED",
+    "description": "A high-volume leg day that will leave your quads and hamstrings on fire. No equipment.",
+    "restSeconds": 30,
+    "exercises": [
+      { "exercise": "jump-squat", "sets": 3, "reps": 15 },
+      { "exercise": "reverse-lunge", "sets": 3, "reps": 15 },
+      { "exercise": "single-leg-romanian-deadlift", "sets": 3, "reps": 10 },
+      { "exercise": "bodyweight-squat", "sets": 3, "reps": 25 },
+      { "exercise": "wall-sit", "sets": 3, "durationSeconds": 60 },
+      { "exercise": "calf-raise", "sets": 3, "reps": 25 },
+      { "exercise": "seated-hamstring-stretch", "sets": 1, "durationSeconds": 40 }
+    ]
+  },
+  {
+    "slug": "glutes-beginner",
+    "name": "Glutes Beginner",
+    "category": "GLUTES",
+    "level": "BEGINNER",
+    "description": "Learn to fire your glutes with bridges, squats and lunges. No equipment.",
+    "restSeconds": 20,
+    "exercises": [
+      { "exercise": "glute-bridge", "sets": 3, "reps": 12 },
+      { "exercise": "bodyweight-squat", "sets": 2, "reps": 12 },
+      { "exercise": "reverse-lunge", "sets": 2, "reps": 8 },
+      { "exercise": "single-leg-romanian-deadlift", "sets": 2, "reps": 6 },
+      { "exercise": "seated-hamstring-stretch", "sets": 1, "durationSeconds": 30 }
+    ]
+  },
+  {
+    "slug": "glutes-intermediate",
+    "name": "Glutes Intermediate",
+    "category": "GLUTES",
+    "level": "INTERMEDIATE",
+    "description": "Bridges, single-leg hinges and jumps to shape and strengthen your glutes. No equipment.",
+    "restSeconds": 30,
+    "exercises": [
+      { "exercise": "glute-bridge", "sets": 3, "reps": 15 },
+      { "exercise": "single-leg-romanian-deadlift", "sets": 3, "reps": 8 },
+      { "exercise": "reverse-lunge", "sets": 3, "reps": 12 },
+      { "exercise": "jump-squat", "sets": 2, "reps": 10 },
+      { "exercise": "butt-kicks", "sets": 2, "durationSeconds": 30 },
+      { "exercise": "seated-hamstring-stretch", "sets": 1, "durationSeconds": 30 }
+    ]
+  },
+  {
+    "slug": "glutes-advanced",
+    "name": "Glutes Advanced",
+    "category": "GLUTES",
+    "level": "ADVANCED",
+    "description": "A glute burner with high-rep bridges, hinges and plyometrics. No equipment.",
+    "restSeconds": 30,
+    "exercises": [
+      { "exercise": "glute-bridge", "sets": 4, "reps": 20 },
+      { "exercise": "single-leg-romanian-deadlift", "sets": 3, "reps": 12 },
+      { "exercise": "reverse-lunge", "sets": 3, "reps": 15 },
+      { "exercise": "jump-squat", "sets": 3, "reps": 15 },
+      { "exercise": "butt-kicks", "sets": 3, "durationSeconds": 40 },
+      { "exercise": "wall-sit", "sets": 2, "durationSeconds": 45 },
+      { "exercise": "seated-hamstring-stretch", "sets": 1, "durationSeconds": 40 }
+    ]
+  },
+  {
+    "slug": "abs-core-beginner",
+    "name": "Abs & Core Beginner",
+    "category": "ABS_CORE",
+    "level": "BEGINNER",
+    "description": "A short core routine to build basic ab strength.",
+    "restSeconds": 20,
+    "exercises": [
+      { "exercise": "crunch", "sets": 2, "reps": 12 },
+      { "exercise": "bicycle-crunch", "sets": 1, "reps": 12 },
+      { "exercise": "plank", "sets": 2, "durationSeconds": 20 },
+      { "exercise": "side-plank", "sets": 2, "durationSeconds": 15 },
+      { "exercise": "cobra-stretch", "sets": 1, "durationSeconds": 30 }
+    ]
+  },
+  {
+    "slug": "abs-core-intermediate",
+    "name": "Abs & Core Intermediate",
+    "category": "ABS_CORE",
+    "level": "INTERMEDIATE",
+    "description": "A full core workout for the abs and obliques.",
+    "restSeconds": 20,
+    "exercises": [
+      { "exercise": "bicycle-crunch", "sets": 2, "reps": 16 },
+      { "exercise": "leg-raise", "sets": 2, "reps": 10 },
+      { "exercise": "russian-twist", "sets": 2, "reps": 16 },
+      { "exercise": "mountain-climber", "sets": 2, "durationSeconds": 30 },
+      { "exercise": "plank", "sets": 2, "durationSeconds": 40 },
+      { "exercise": "side-plank", "sets": 2, "durationSeconds": 25 },
+      { "exercise": "cobra-stretch", "sets": 1, "durationSeconds": 30 }
+    ]
+  },
+  {
+    "slug": "abs-core-advanced",
+    "name": "Abs & Core Advanced",
+    "category": "ABS_CORE",
+    "level": "ADVANCED",
+    "description": "A tough, high-volume core session.",
+    "restSeconds": 20,
+    "exercises": [
+      { "exercise": "bicycle-crunch", "sets": 3, "reps": 20 },
+      { "exercise": "leg-raise", "sets": 3, "reps": 15 },
+      { "exercise": "russian-twist", "sets": 3, "reps": 24 },
+      { "exercise": "mountain-climber", "sets": 3, "durationSeconds": 45 },
+      { "exercise": "plank", "sets": 3, "durationSeconds": 60 },
+      { "exercise": "side-plank", "sets": 3, "durationSeconds": 40 },
+      { "exercise": "cobra-stretch", "sets": 1, "durationSeconds": 40 }
+    ]
+  },
+  {
+    "slug": "cardio-hiit-beginner",
+    "name": "Cardio & HIIT Beginner",
+    "category": "CARDIO_HIIT",
+    "level": "BEGINNER",
+    "description": "Low-impact cardio intervals to get your heart rate up.",
+    "restSeconds": 20,
+    "exercises": [
+      { "exercise": "jumping-jacks", "sets": 2, "durationSeconds": 30 },
+      { "exercise": "high-knees", "sets": 2, "durationSeconds": 30 },
+      { "exercise": "butt-kicks", "sets": 2, "durationSeconds": 30 },
+      { "exercise": "jump-rope", "sets": 2, "durationSeconds": 30 },
+      { "exercise": "seated-hamstring-stretch", "sets": 1, "durationSeconds": 30 }
+    ]
+  },
+  {
+    "slug": "cardio-hiit-intermediate",
+    "name": "Cardio & HIIT Intermediate",
+    "category": "CARDIO_HIIT",
+    "level": "INTERMEDIATE",
+    "description": "A fat-burning interval circuit that mixes cardio and bodyweight moves.",
+    "restSeconds": 20,
+    "exercises": [
+      { "exercise": "jumping-jacks", "sets": 3, "durationSeconds": 40 },
+      { "exercise": "high-knees", "sets": 3, "durationSeconds": 40 },
+      { "exercise": "mountain-climber", "sets": 3, "durationSeconds": 30 },
+      { "exercise": "burpee", "sets": 2, "reps": 10 },
+      { "exercise": "jump-squat", "sets": 2, "reps": 12 },
+      { "exercise": "jump-rope", "sets": 2, "durationSeconds": 45 },
+      { "exercise": "seated-hamstring-stretch", "sets": 1, "durationSeconds": 30 }
+    ]
+  },
+  {
+    "slug": "cardio-hiit-advanced",
+    "name": "Cardio & HIIT Advanced",
+    "category": "CARDIO_HIIT",
+    "level": "ADVANCED",
+    "description": "An all-out interval session for fat burning and endurance.",
+    "restSeconds": 20,
+    "exercises": [
+      { "exercise": "burpee", "sets": 3, "reps": 15 },
+      { "exercise": "jump-squat", "sets": 3, "reps": 15 },
+      { "exercise": "mountain-climber", "sets": 3, "durationSeconds": 45 },
+      { "exercise": "high-knees", "sets": 3, "durationSeconds": 45 },
+      { "exercise": "jump-rope", "sets": 3, "durationSeconds": 60 },
+      { "exercise": "seated-hamstring-stretch", "sets": 1, "durationSeconds": 40 }
+    ]
+  }
+]
